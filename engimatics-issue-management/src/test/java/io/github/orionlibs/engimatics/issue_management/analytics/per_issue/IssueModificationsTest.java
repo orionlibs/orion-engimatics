@@ -10,12 +10,12 @@ import org.junit.jupiter.api.parallel.ExecutionMode;
 
 @TestInstance(Lifecycle.PER_METHOD)
 @Execution(ExecutionMode.CONCURRENT)
-public class IssueCommentsTest
+public class IssueModificationsTest
 {
     @Test
-    void test_getAverageNumberOfComments()
+    void test_emptyConstructor()
     {
-        int[] comments = new int[] {2, 6, 4, 9};
-        assertEquals(5.25f, IssueComments.getAverageNumberOfComments(comments));
+        int[] modifications = new int[] {2, 6, 4, 9};
+        assertEquals(5.25f, IssueModifications.getAverageNumberOfModifications(modifications));
     }
 }

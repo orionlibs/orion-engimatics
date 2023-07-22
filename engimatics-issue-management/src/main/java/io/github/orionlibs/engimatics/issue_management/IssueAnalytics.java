@@ -16,7 +16,7 @@ public class IssueAnalytics
     private int averageNumberOfCommentsPerDay;
     private int averageNumberOfModificationsPerDay;
     private long issueAgeInSeconds;
-    //time between when an issue is logged and when it is first responded to
+    //time between when an issue is created and when it is first responded to
     private long timeToFirstResponseInSeconds;
     private long timeToResolutionInSeconds;
 }
